@@ -305,12 +305,12 @@ export const Students = () => {
                           <Badge
                             className={
                               student.grade === 5
-                                ? "bg-green-100 text-green-800 hover:bg-green-100"
+                                ? "bg-yellow-100 text-yellow-800 hover:bg-yellow-100"
                                 : student.grade === 4
-                                ? "bg-blue-100 text-blue-800 hover:bg-blue-100"
+                                ? "bg-yellow-100 text-yellow-800 hover:bg-yellow-100"
                                 : student.grade === 3
                                 ? "bg-yellow-100 text-yellow-800 hover:bg-yellow-100"
-                                : "bg-red-100 text-red-800 hover:bg-red-100"
+                                : "bg-yellow-100 text-yellow-800 hover:bg-yellow-100"
                             }
                           >
                             {student.grade}
@@ -320,7 +320,7 @@ export const Students = () => {
                             Baholanmagan
                           </span>
                         )}
-                      </TableCell>
+                      </TableCell>w
                       <TableCell className="text-right">
                         <Badge
                           variant={

@@ -25,17 +25,17 @@ export function AppSidebar({ role }: { role: "admin" | "teacher" }) {
               const isHome = item.url === `/app/${role}`;
               
               return (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <NavLink
-                      to={item.url}
+              <SidebarMenuItem key={item.title}>
+                <SidebarMenuButton asChild>
+                  <NavLink
+                    to={item.url}
                       end={isHome}
                       className={`group relative flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-200 ${
                         isActive
                           ? "bg-gray-100 text-black"
                           : "text-gray-600 hover:bg-gray-50 hover:text-black"
                       }`}
-                    >
+                  >
                       <>
                         <span
                           className={`absolute left-0 top-1/2 h-8 w-1 -translate-y-1/2 rounded-r-full bg-black transition-all duration-200 ${
@@ -51,9 +51,9 @@ export function AppSidebar({ role }: { role: "admin" | "teacher" }) {
                         />
                         <span className={isActive ? "font-semibold" : ""}>{item.title}</span>
                       </>
-                    </NavLink>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
+                  </NavLink>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
               );
             })}
           </SidebarMenu>

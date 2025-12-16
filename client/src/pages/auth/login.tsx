@@ -103,7 +103,7 @@ export const Login = () => {
           toast.error("Kirishda xatolik", {
             description: error?.message || "Noma'lum xatolik yuz berdi",
             position: "bottom-right",
-          });
+          });``
         }
       },
     });

@@ -47,7 +47,7 @@ export const UserProfilePopup = ({ open, onClose, role }: UserProfilePopupProps)
             size={80}
             src={admin.avatarUrl ? `http://localhost:3000/${admin.avatarUrl}` : undefined}
             icon={<UserOutlined />}
-            style={{ backgroundColor: "#87d068" }}
+            style={{ backgroundColor: "#FF0000" }}
           />
           <Title level={4} style={{ marginTop: 10, marginBottom: 0 }}>
             {admin.fullName}
@@ -84,7 +84,7 @@ export const UserProfilePopup = ({ open, onClose, role }: UserProfilePopupProps)
             size={80}
             src={teacher.avatarUrl ? `http://localhost:3000/${teacher.avatarUrl}` : undefined}
             icon={<UserOutlined />}
-            style={{ backgroundColor: "#87d068" }}
+            style={{ backgroundColor: "#FF0000" }}
           />
           <Title level={4} style={{ marginTop: 10, marginBottom: 0 }}>
             {teacher.name}
